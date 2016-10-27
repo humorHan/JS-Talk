@@ -1,16 +1,12 @@
 # JS-
 
-杂技1： 不通过中间量互换值
+  <section class="post-content">
+<h3 id="q1">Q0 不通过中间量互换值
      <code>
        var a = 1;       <br/>
        var b = 2;       <br/>
        a = [b, b=a][0]; <br/>
      </code>
-杂技2： 前端常用算法问题
-
-     <section class="post-content">
-            <p>虽说我们很多时候前端很少有机会接触到算法。大多都交互性的操作，然而从各大公司面试来看，算法依旧是考察的一方面。实际上学习数据结构与算法对于工程师去理解和分析问题都是有帮助的。如果将来当我们面对较为复杂的问题，这些基础知识的积累可以帮助我们更好的优化解决思路。下面罗列在前端面试中经常撞见的几个问题吧。</p>
-
 <h3 id="q1">Q1 判断一个单词是否是回文？</h3>
 
 <blockquote>
@@ -397,15 +393,4 @@
 <span class="hljs-built_in">module</span>.exports = BinarySearchTree;  
 </code></pre>
 
-<p><a href="https://github.com/JackPu/JavaScript-Algorithm-Learning">完整代码 Github</a> </p>
 
-<h3 id="">扩展阅读</h3>
-
-<p><a href="https://www.interviewcake.com/question/javascript/rectangular-love">https://www.interviewcake.com/question/javascript/rectangular-love</a></p>
-
-<p><a href="http://stackoverflow.com/questions/21853967/get-elements-by-class-a-or-b-in-javascript">http://stackoverflow.com/questions/21853967/get-elements-by-class-a-or-b-in-javascript</a></p>
-
-<p><a href="http://codepen.io/Jack_Pu/pen/EgrXBp">http://codepen.io/Jack_Pu/pen/EgrXBp</a></p>
-
-<p><a href="http://javascript-html5-tutorial.com/algorithms-and-data-structures-in-javascript.html">http://javascript-html5-tutorial.com/algorithms-and-data-structures-in-javascript.html</a></p>
-        </section>
