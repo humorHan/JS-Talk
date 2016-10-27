@@ -1,7 +1,7 @@
-# JS-
+# JS  
 
   <section class="post-content">
-<h3 id="q1">Q0 不通过中间量互换值
+<h3 id="q1">Q0 不通过中间量互换值 <br/>
      <code>
        var a = 1;       <br/>
        var b = 2;       <br/>
@@ -105,10 +105,8 @@
 <span class="hljs-built_in">module</span>.exports = bubbleSort;  
 </code></pre>
 
-<p>除了冒泡排序外，其实还有很多诸如 <a href="https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">插入排序</a>,<a href="https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">快速排序</a>，<a href="https://zh.wikipedia.org/wiki/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F">希尔排序</a>等。每一种排序算法都有各自的特点。全部掌握也不需要，但是心底一定要熟悉几种算法。
-比如快速排序，其效率很高，而其基本原理如图(来自wiki)：</p>
-
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif"></p>
+<p>除了冒泡排序外，其实还有很多诸如  插入排序  快速排序 希尔排序等。每一种排序算法都有各自的特点。全部掌握也不需要，但是心底一定要熟悉几种算法。
+ 
 
 <p>算法参考某个元素值，将小于它的值，放到左数组中，大于它的值的元素就放到右数组中，然后递归进行上一次左右数组的操作，返回合并的数组就是已经排好顺序的数组了。</p>
 
@@ -135,61 +133,7 @@
 <span class="hljs-built_in">module</span>.exports = quickSort;  
 </code></pre>
 
-<p>安利大家一个学习的地址，通过动画演示算法的实现。</p>
-
-<p><a href="http://math.hws.edu/eck/jsdemo/sortlab.html">HTML5 Canvas Demo: Sorting Algorithms</a></p>
-
-<h3 id="q5">Q5 不借助临时变量，进行两个整数的交换</h3>
-
-<pre><code class="language- bash hljs">输入 a = 2, b = 4 输出 a = 4, b =2
-</code></pre>
-
-<p>这种问题非常巧妙，需要大家跳出惯有的思维，利用 a , b进行置换。</p>
-
-<p>主要是利用 + - 去进行运算，类似 a = a + ( b - a) 实际上等同于最后 的 a = b;</p>
-
-<pre><code class="language- JS hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swap</span>(<span class="hljs-params">a , b</span>) </span>{  
-  b = b - a;
-  a = a + b;
-  b = a - b;
-  <span class="hljs-keyword">return</span> [a,b];
-}
-
-<span class="hljs-built_in">module</span>.exports = swap;  
-</code></pre>
-
-<h3 id="q6canvas">Q6 使用canvas 绘制一个有限度的斐波那契数列的曲线？</h3>
-
-<p><img src="http://img1.vued.vanthink.cn/vued90edf7b944ec479ee8b4203cf56e158d.png"></p>
-
-<p>数列长度限定在9.</p>
-
-<p><code>斐波那契数列</code>，又称黄金分割数列，指的是这样一个数列：0、1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列主要考察递归的调用。我们一般都知道定义</p>
-
-<pre><code class="language- JS hljs">fibo[i] = fibo[i<span class="hljs-number">-1</span>]+fibo[i<span class="hljs-number">-2</span>];  
-</code></pre>
-
-<p>生成斐波那契数组的方法</p>
-
-<pre><code class="language- JS hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFibonacci</span>(<span class="hljs-params">n</span>) </span>{  
-  <span class="hljs-keyword">var</span> fibarr = [];
-  <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">while</span>(i&lt;n) {
-    <span class="hljs-keyword">if</span>(i&lt;=<span class="hljs-number">1</span>) {
-      fibarr.push(i);
-    }<span class="hljs-keyword">else</span>{
-      fibarr.push(fibarr[i<span class="hljs-number">-1</span>] + fibarr[i<span class="hljs-number">-2</span>])
-    }
-    i++;
-  }
-
-  <span class="hljs-keyword">return</span> fibarr;
-}
-</code></pre>
-
-<p>剩余的工作就是利用canvas <code>arc</code>方法进行曲线绘制了</p>
-
-<p><a href="http://codepen.io/Jack_Pu/pen/LRaxZB">DEMO</a></p>
+ 
 
 <h3 id="q7">Q7 找出下列正数组的最大差值比如:</h3>
 
@@ -371,6 +315,7 @@
       node.right = <span class="hljs-keyword">this</span>.removeNode(node.right,data);
       <span class="hljs-keyword">return</span> node;
     }
+
   }
 
   find(data) {
