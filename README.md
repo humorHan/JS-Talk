@@ -2,11 +2,12 @@
 
   <section class="post-content">
 <h3 id="q1">Q0 不通过中间量互换值 <br/>
-     <code>
+     <p><code>
        var a = 1;       <br/>
        var b = 2;       <br/>
        a = [b, b=a][0]; <br/>
      </code>
+     </p>
 <h3 id="q1">Q1 判断一个单词是否是回文？</h3>
 
 <blockquote>
